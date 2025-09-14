@@ -27,8 +27,27 @@ Before running the project, make sure you have the following installed:
 
 ---
 
+## Quick Start (Desktop)
 
-## To run the application locally:
+If you just want to run the desktop version right away:
+
+# 1. Clone the repository
+```bash
+git clone https://github.com/Jespardo/SharkBoids-Game.git
+```
+
+# 2. Run with Gradle wrapper (Linux/macOS)
+```bash
+cd SharkBoids-Game
+./gradlew :lwjgl3:run
+```
+# On Windows:
+```powershell
+cd SharkBoids-Game
+gradlew.bat :lwjgl3:run
+```
+
+## How to set up wokring enviornment locally:
 1.In your IDE (Android Studios or Intellij is the simplest), click `edit configuration`
 
 ![set up configuration step 1](img/edit_config_step1.png)
