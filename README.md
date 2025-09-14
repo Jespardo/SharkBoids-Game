@@ -1,8 +1,56 @@
 # SharkBoids
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+A simple Andorid game where the player must escape sharks implemented with the classic [Boids algorithm](https://en.wikipedia.org/wiki/Boids).
+The game is an exercise in LibGDX development and specifically in applying the Boids algorithm in a practical application. 
 
-This project was generated with a template including simple application launchers and an empty `ApplicationAdapter` extension.
+![Gameplay screenshot](img/gamePlay.png)
+
+This [libGDX](https://libgdx.com/) project is generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+
+## Prerequisites
+
+Before running the project, make sure you have the following installed:
+
+- **Java Development Kit (JDK 17 or higher)** – required to compile and run the game.  
+  [Download JDK](https://adoptium.net/)
+
+- **Gradle** – not strictly required, since the project includes the Gradle Wrapper (`./gradlew` / `gradlew.bat`), but installing Gradle globally is recommended.  
+  [Download Gradle](https://gradle.org/install/)
+
+- **Android Studio or IntelliJ IDEA** – for easiest setup and to run/debug on desktop or Android.  
+  [Download Android Studio](https://developer.android.com/studio)  
+  [Download IntelliJ IDEA](https://www.jetbrains.com/idea/)
+
+- **Android SDK** – required if you plan to run the Android version. This can be installed directly via Android Studio.
+
+- **Git LFS** (optional) – if large assets such as images, audio, or video are managed with [Git Large File Storage](https://git-lfs.com/).
+
+---
+
+
+## To run the application locally:
+1.In your IDE (Android Studios or Intellij is the simplest), click `edit configuration`
+
+![set up configuration step 1](img/edit_config_step1.png)
+
+2.Click the `+`-symbol to add a new configuration and select `Application`.
+
+![set up configuration step 2](img/edit_config_step2.png)
+
+3. In the new Application config, click `Modify opetions` and select `add VM-options`.
+
+![set up configuration step 3](img/edit_config_step3.png)
+
+- In this field, enter `-XstartOnFirstThread`
+
+4. For the other fields your configuration should match this:
+
+![set up configuration step 4](img/edit_config_step4.png)
+
+- Press `ok`.
+- Now you can select the lwjgl3 configuration and run the project in you IDE.
+
+**Note:** Alternatively you can run the project with the default Android configuration in Android Studios. However, the controller is not correctly set up for this environment yet, so it is not fully functional.
 
 ## Platforms
 
